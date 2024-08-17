@@ -1,8 +1,8 @@
 import React from "react";
-import { useFetchRequests } from "../fetchProjects";
+import { useFetchProjects } from "../fetchProjects";
 
 const Projects = () => {
-  const { loading, projects } = useFetchRequests();
+  const { loading, projects } = useFetchProjects();
   console.log("projects", projects);
   return (
     <div>
